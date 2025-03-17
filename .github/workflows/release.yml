@@ -5,6 +5,10 @@ on:
     tags:
       - "v*"
 
+# Add permission for creating releases
+permissions:
+  contents: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -35,3 +39,5 @@ jobs:
             Release ${{ github.ref_name }}
 
             Automatically created by the release workflow.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
