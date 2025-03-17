@@ -20,6 +20,6 @@ jobs:
         run: npm ci
       - name: Build and package
         run: npm run prepare
-      - name: Verify index.js loads correctly
+      - name: Verify main.js loads correctly
         run: |
-          node -e "try { require('./dist/index.js'); console.log('Successfully loaded index.js'); } catch (e) { console.error(e); process.exit(1); }"
+          node -e "try { require('./dist/main.js'); console.log('Successfully loaded main.js'); } catch (e) { console.error(e); process.exit(1); }"

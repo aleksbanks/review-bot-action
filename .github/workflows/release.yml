@@ -21,14 +21,16 @@ jobs:
         run: npm run prepare
       - name: Verify build
         run: |
-          node -e "try { require('./dist/index.js'); console.log('Successfully loaded index.js'); } catch (e) { console.error(e); process.exit(1); }"
+          node -e "try { require('./dist/main.js'); console.log('Successfully loaded main.js'); } catch (e) { console.error(e); process.exit(1); }"
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             dist/index.js
+            dist/main.js
             dist/licenses.txt
             action.yml
+            create-main.js
           body: |
             Release ${{ github.ref_name }}
 
