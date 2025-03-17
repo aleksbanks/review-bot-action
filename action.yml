@@ -1,7 +1,7 @@
 name: "Review Bot"
 description: "Checks PR compliance with standards"
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"
 inputs:
   githubToken:
