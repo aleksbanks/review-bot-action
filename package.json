@@ -9,6 +9,7 @@
     "package": "ncc build src/index.ts --license licenses.txt -o dist",
     "create-main": "node create-main.js",
     "prepare": "npm run build && npm run package && npm run create-main",
+    "test-main": "node test-main.js",
     "lint": "eslint . --ext .ts",
     "test": "echo \"No tests yet!\""
   },
