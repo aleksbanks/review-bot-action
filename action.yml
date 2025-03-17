@@ -1,0 +1,9 @@
+name: "Review Bot"
+description: "Checks PR compliance with standards"
+runs:
+  using: "node16"
+  main: "dist/index.js"
+inputs:
+  githubToken:
+    required: true
+    description: "GitHub token"

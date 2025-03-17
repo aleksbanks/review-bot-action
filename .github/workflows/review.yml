@@ -1,0 +1,15 @@
+name: Review Bot
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Review Bot
+        uses: aleksbanks/review-bot-action@v1
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}

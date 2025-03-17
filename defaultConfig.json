@@ -1,0 +1,102 @@
+{
+    "restrictedFiles": [
+      "package.json",
+      "yarn.lock"
+    ],
+    "codingStyleRules": [
+    {
+      "rule": "proceduralStyle",
+      "message": "Use procedural style, avoid class-based style."
+    },
+    {
+      "rule": "meaningfulVariableNames",
+      "message": "Use descriptive variable names, avoid abbreviations."
+    },
+    {
+      "rule": "uppercaseConstants",
+      "message": "Constant variables should be written in uppercase."
+    },
+    {
+      "rule": "avoidComplexArrayMethods",
+      "message": "Avoid using overly complex methods like 'reduce'. Use simpler array methods like 'filter' and 'map'."
+    },
+    {
+      "rule": "preferStandardTools",
+      "message": "Use standard, widely accepted constructs instead of custom ones."
+    },
+    {
+      "rule": "noCommentedCode",
+      "message": "Don't leave commented-out code without a TODO."
+    },
+    {
+      "rule": "noConsoleLogs",
+      "message": "Don't leave console.log statements in the code."
+    }
+  ],
+  "fileStructureRules": [
+    {
+      "rule": "separateEntities",
+      "message": "Separate constants, utilities, and types into different files from components."
+    },
+    {
+      "rule": "reuseCommonCode",
+      "message": "Commonly used code should be stored in shared folders."
+    }
+  ],
+  "exportImportRules": [
+    {
+      "rule": "consistentExports",
+      "message": "Use consistent export style across the project (named or default)."
+    },
+    {
+      "rule": "importType",
+      "message": "Use 'import type' for importing types."
+    },
+    {
+      "rule": "useAbsolutePaths",
+      "message": "Use absolute paths for imports if the number of '../' exceeds 3."
+    }
+  ],
+  "typeDefinitionRules": [
+    {
+      "rule": "noAnyType",
+      "message": "Avoid using 'any' and 'as' in types."
+    },
+    {
+      "rule": "noReactFC",
+      "message": "Do not use 'React.FC' for component typing."
+    }
+  ],
+  "jsRules": [
+    {
+      "rule": "useConst",
+      "message": "Use 'const' instead of 'let' where possible."
+    },
+    {
+      "rule": "noElseAfterReturn",
+      "message": "Avoid 'else' statements if the return condition is met."
+    },
+    {
+      "rule": "flattenCode",
+      "message": "Avoid deep nesting. Aim for flatter, more readable code."
+    },
+    {
+      "rule": "DRYPrinciple",
+      "message": "Follow the DRY (Don't Repeat Yourself) principle. Avoid code duplication."
+    }
+  ],
+  "commentRules": [
+    {
+      "rule": "addJiraTaskIdInComments",
+      "message": "Include JIRA task ID or username in TODO and FIXME comments."
+    },
+    {
+      "rule": "commentsInRussian",
+      "message": "Use Russian for comments."
+    },
+    {
+      "rule": "explainCommentedCode",
+      "message": "Do not leave commented code without an explanation of its purpose."
+    }
+  ]
+  }
