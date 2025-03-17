@@ -1,7 +1,5 @@
 # Node.js
 node_modules/
-dist/
-
 
 # TypeScript
 *.tsbuildinfo
@@ -19,3 +17,7 @@ Thumbs.db
 # Editor specific
 .vscode/
 .idea/
+
+# Temporary files
+*.tmp
+*.bak
