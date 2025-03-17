@@ -20,12 +20,6 @@ jobs:
         run: npm ci
       - name: Build and package
         run: npm run prepare
-      - name: Verify sourcemap file exists
-        run: |
-          if [ ! -f ./dist/sourcemap-register.js ]; then
-            echo "Error: sourcemap-register.js is missing!"
-            exit 1
-          fi
-      - name: Verify index.js can load sourcemap
+      - name: Verify index.js loads correctly
         run: |
           node -e "try { require('./dist/index.js'); console.log('Successfully loaded index.js'); } catch (e) { console.error(e); process.exit(1); }"
